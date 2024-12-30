@@ -1,0 +1,236 @@
+
+proxy-groups:
+  - name: 🌐ALL
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Filter.png
+    include-all: true
+    type: select
+  - name: 🕹️黑白机
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Bypass.png
+    type: select
+    proxies:
+      - 🌍代理
+      - 🇨🇳直连
+  - name: 🌍代理
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Proxy.png
+    type: select
+    proxies:
+      - 🌐ALL
+      - 🇭🇰香港
+  - name: 🇨🇳直连
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Direct.png
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🅱️BiliBili
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/bilibili.png
+    type: select
+    proxies:
+      - 🇨🇳直连
+      - 🇹🇼台湾
+      - 🌍代理
+  - name: 📺奈飞视频
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Netflix.png
+    type: select
+    proxies:
+      - 🇸🇬新加坡
+      - 🌍代理
+  - name: 🎶TikTok
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/TikTok.png
+    type: select
+    proxies:
+      - 🇸🇬新加坡
+      - 🌍代理
+  - name: 🍎苹果
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Apple.png
+    type: select
+    proxies:
+      - 🇨🇳直连
+      - 🌍代理
+  - name: 💻微软
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Microsoft.png
+    type: select
+    proxies:
+      - 🇨🇳直连
+      - 🌍代理
+  - name: 🌐Google
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Google_Search.png
+    type: select
+    proxies:
+      - 🌍代理
+      - 🇨🇳直连
+  - name: 🎬YouTube
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/YouTube.png
+    type: select
+    proxies:
+      - 🌍代理
+      - 🇨🇳直连
+  - name: 📞Telegram
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Telegram_X.png
+    type: select
+    proxies:
+      - 🌍代理
+  - name: 💰PayPal
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/PayPal.png
+    type: select
+    proxies:
+      - 🇨🇳直连
+      - 🌍代理
+      - 🇹🇼台湾
+  - name: 💿国内媒体
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Media.png
+    type: select
+    proxies:
+      - 🇨🇳直连
+  - name: 🇭🇰香港
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/HK.png
+    include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇸🇬新加坡
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/SG.png
+    include-all: true
+    filter: (?i)新加坡|坡|狮城|SG|Singapore
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇹🇼台湾
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/TW.png
+    include-all: true
+    filter: (?i)台|新北|彰化|TW|Taiwan
+    type: url-test
+    interval: 300
+    tolerance: 50
+
+rule-providers!:
+  TikTok:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/TikTok/TikTok.list
+    path: ./ruleset/TikTok.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BiliBiliIntl:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/BiliBiliIntl/BiliBiliIntl.list
+    path: ./ruleset/BiliBiliIntl.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Apple:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Apple/Apple.list
+    path: ./ruleset/Apple.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  SteamCN:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/SteamCN/SteamCN.list
+    path: ./ruleset/SteamCN.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Steam:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Steam/Steam.list
+    path: ./ruleset/Steam.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaMedia:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/ChinaMedia/ChinaMedia.list
+    path: ./ruleset/ChinaMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Microsoft:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Microsoft/Microsoft.list
+    path: ./ruleset/SteamCN.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Netflix:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Netflix/Netflix.list
+    path: ./ruleset/Netflix.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Telegram:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Telegram/Telegram.list
+    path: ./ruleset/Telegram.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  PayPal:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/PayPal/PayPal.list
+    path: ./ruleset/PayPal.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Google:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Google/Google.list
+    path: ./ruleset/Google.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  YouTube:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/YouTube/YouTube.list
+    path: ./ruleset/YouTube.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaNoMedia:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/ChinaNoMedia/ChinaNoMedia.list
+    path: ./ruleset/ChinaNoMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  China:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/China/China.list
+    path: ./ruleset/China.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+
+rules:
+  - RULE-SET,TikTok,🎶TikTok
+  - RULE-SET,BiliBiliIntl,🅱️BiliBili
+  - RULE-SET,Apple,🍎苹果
+  - RULE-SET,SteamCN,💿国内媒体
+  - RULE-SET,Steam,🌍代理
+  - RULE-SET,ChinaMedia,💿国内媒体
+  - RULE-SET,Microsoft,💻微软
+  - RULE-SET,Netflix,📺奈飞视频
+  - RULE-SET,Telegram,📞Telegram
+  - RULE-SET,PayPal,💰PayPal
+  - RULE-SET,Google,🌐Google
+  - RULE-SET,YouTube,🎬YouTube
+  - RULE-SET,ChinaNoMedia,🇨🇳直连
+#  - RULE-SET,China,🇨🇳直连
+  - IP-ASN,10222,🇨🇳直连
+  - IP-ASN,132203,🇨🇳直连
+  - IP-CIDR,114.114.112.0/22,🇨🇳直连
+  - DOMAIN-SUFFIX,lan,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,17.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,239.0.0.0/8,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR,240.0.0.0/4,DIRECT
+  - GEOIP,CN,🇨🇳直连
+  - MATCH,🕹️黑白机
