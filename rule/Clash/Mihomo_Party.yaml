@@ -3,6 +3,7 @@ proxy-groups:
   - name: 🌐ALL
     icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Filter.png
     include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|续费|应急
     type: select
   - name: 🕹️黑白机
     icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Bypass.png
@@ -84,6 +85,7 @@ proxy-groups:
   - name: 🇭🇰香港
     icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/HK.png
     include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|续费|应急
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     type: url-test
     interval: 300
@@ -91,6 +93,7 @@ proxy-groups:
   - name: 🇸🇬新加坡
     icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/SG.png
     include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|续费|应急
     filter: (?i)新加坡|坡|狮城|SG|Singapore
     type: url-test
     interval: 300
@@ -98,6 +101,7 @@ proxy-groups:
   - name: 🇹🇼台湾
     icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/TW.png
     include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|续费|应急
     filter: (?i)台|新北|彰化|TW|Taiwan
     type: url-test
     interval: 300
