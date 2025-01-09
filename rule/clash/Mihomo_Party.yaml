@@ -29,6 +29,13 @@ proxy-groups:
       - 🇨🇳直连
       - 🇹🇼台湾
       - 🌍代理
+  - name: 📽️iQIYI
+    icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/iQIYI&bilibili.png
+    type: select
+    proxies:
+      - 🇨🇳直连
+      - 🇹🇼台湾
+      - 🌍代理
   - name: 📺奈飞视频
     icon: https://github.com/liuasktao/Nptrf/raw/master/img/Color/Netflix.png
     type: select
@@ -122,6 +129,13 @@ rule-providers!:
     interval: 86400
     format: text
     type: http
+  iQIYIIntl:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/iQIYIIntl/iQIYIIntl.list
+    path: ./ruleset/iQIYIIntl.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   Apple:
     url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Apple/Apple.list
     path: ./ruleset/Apple.list
@@ -210,6 +224,7 @@ rule-providers!:
 rules:
   - RULE-SET,TikTok,🎶TikTok
   - RULE-SET,BiliBiliIntl,🅱️BiliBili
+  - RULE-SET,iQIYIIntl,📽️iQIYI
   - RULE-SET,Apple,🍎苹果
   - RULE-SET,SteamCN,💿国内媒体
   - RULE-SET,Steam,🌍代理
