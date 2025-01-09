@@ -129,9 +129,9 @@ rule-providers!:
     interval: 86400
     format: text
     type: http
-  iQIYIIntl:
-    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/iQIYIIntl/iQIYIIntl.list
-    path: ./ruleset/iQIYIIntl.list
+  iQIYI:
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/iQIYIIntl/iQIYI.list
+    path: ./ruleset/iQIYI.list
     behavior: classical
     interval: 86400
     format: text
@@ -224,7 +224,7 @@ rule-providers!:
 rules:
   - RULE-SET,TikTok,🎶TikTok
   - RULE-SET,BiliBiliIntl,🅱️BiliBili
-  - RULE-SET,iQIYIIntl,📽️iQIYI
+  - RULE-SET,iQIYI,📽️iQIYI
   - RULE-SET,Apple,🍎苹果
   - RULE-SET,SteamCN,💿国内媒体
   - RULE-SET,Steam,🌍代理
