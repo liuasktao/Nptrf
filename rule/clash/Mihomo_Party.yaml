@@ -130,7 +130,7 @@ rule-providers!:
     format: text
     type: http
   iQIYI:
-    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/iQIYIIntl/iQIYI.list
+    url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/iQIYI/iQIYI.list
     path: ./ruleset/iQIYI.list
     behavior: classical
     interval: 86400
