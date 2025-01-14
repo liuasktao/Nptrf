@@ -222,6 +222,7 @@ rule-providers!:
     type: http
 
 rules:
+  - DOMAIN-SUFFIX,pc6.com,🌍代理
   - RULE-SET,TikTok,🎶TikTok
   - RULE-SET,BiliBiliIntl,🅱️BiliBili
   - RULE-SET,iQIYI,📽️iQIYI
