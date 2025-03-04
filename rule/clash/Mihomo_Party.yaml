@@ -1,6 +1,6 @@
 dns!:
   enable: true
-  listen: 127.0.0.1:8853
+  listen: localhost:8853
   default-nameserver:
     - tls://223.5.5.5
     - tls://[2400:3200::1]
