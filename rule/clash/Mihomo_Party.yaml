@@ -15,18 +15,19 @@ dns!:
     - ntp.*.com
     - +.market.xiaomi.com
   nameserver:
+    - https://dns.google/dns-query
+    - https://one.one.one.one/dns-query
     - https://dns.alidns.com/dns-query
-    - https://120.53.53.53/ds-query
-    - tls://1.1.1.1
-    - tls://8.8.8.8
+    - https://doh.pub/dns-query
   use-hosts: true
   use-system-hosts: false
   proxy-server-nameserver:
     - https://dns.alidns.com/dns-query
-    - https://120.53.53.53/ds-query
+    - https://doh.pub/dns-query
+    - tls://8.8.8.8
   direct-nameserver:
     - tls://223.5.5.5
-    - tls://dns.alidns.com
+    - tls://[2400:3200::1]
   respect-rules: false
 proxy-groups:
   - name: 🌐ALL
