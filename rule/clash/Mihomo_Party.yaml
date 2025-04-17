@@ -269,6 +269,12 @@ rules:
   - RULE-SET,YouTube,🎬YouTube
   - RULE-SET,ChinaNoMedia,🇨🇳直连
 #  - RULE-SET,China,🇨🇳直连
+  - DOMAIN,swdist.apple.com,REJECT
+  - DOMAIN,swscan.apple.com,REJECT
+  - DOMAIN,swcd.apple.com,REJECT
+  - DOMAIN,gdmf.apple.com,REJECT
+  - DOMAIN,mesu.apple.com,REJECT
+  - DOMAIN,xp.apple.com,REJECT
   - IP-ASN,10222,🇨🇳直连
   - IP-ASN,132203,🇨🇳直连
   - IP-CIDR,114.114.112.0/22,🇨🇳直连
