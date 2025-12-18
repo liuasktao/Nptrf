@@ -255,10 +255,10 @@ rule-providers!:
 rules:
 #  - DOMAIN,swdist.apple.com,REJECT
 #  - DOMAIN,swscan.apple.com,REJECT
-  - DOMAIN,swcdn.apple.com,REJECT
+#  - DOMAIN,swcdn.apple.com,REJECT
   - DOMAIN,gdmf.apple.com,REJECT
   - DOMAIN,mesu.apple.com,REJECT
-  - DOMAIN,xp.apple.com,REJECT
+#  - DOMAIN,xp.apple.com,REJECT
   - DOMAIN-SUFFIX,pc6.com,🌍代理
   - RULE-SET,TikTok,🎶TikTok
   - RULE-SET,BiliBiliIntl,🅱️BiliBili
